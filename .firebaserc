@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "frontend-53875": {
+      "hosting": {
+        "Frontend": [
+          "frontend-53875"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "frontend-53875"
+  }
+}

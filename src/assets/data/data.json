@@ -1,0 +1,46 @@
+{      
+    "persona":
+        {
+            "id": "1",
+            "nombre": "Valentina de los Angeles",
+            "apellido": "Zambrano",
+            "mail": "matutias10000@gmail.com",
+            "numero":"(+54)3813960697",
+            "sobre_mi": "Tengo 20 años, recibido de escuela tecnica orientacion en equipos e instalaciones electromecanicas",
+            "info":"Saludos soy vale zambrano y este es mi portafolio web para presentar en Argentina programa",
+            "banner": "../assets/banner.jpg",
+            "image_perfil": "../assets/foto_de_perfil.jpg",
+            "ubicacion":"Tucuman, Argentina"
+        },
+    "trabajos":[
+        {
+            "id":"1",
+            "titulo":"Desarrolladora web",
+            "descripcion":"Argentina programa"
+        }
+    ],
+    "educacion": [
+        {
+            "id":"1",
+            "escuela": "Escuela Secundaria",
+            "titulo": "Humanidades",
+            "inicio": "2014",
+            "fin": "2020"
+        }
+    ],
+    "skills":[
+        {   
+            "id":"1",
+            "nombre_hab":"Analisis de sistemas",
+            "porcentaje":"70"
+        }
+    ],
+    "proyectos":[
+        {   
+            "id":"54",
+            "nombre":"proyecto",
+            "link":"link",
+            "descripcion":"Argentina programa #YoProgramo"
+        }
+    ]
+}

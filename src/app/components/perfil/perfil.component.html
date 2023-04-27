@@ -1,0 +1,21 @@
+<header class="card">
+
+    <div class="d-flex align-items-end">
+        <img class="card-img-top" [src]="miPortafolio.per.banner" alt="">
+    </div>
+
+    <div id="foto-de-perfil" class="d-flex align-items-end">
+      <img style="width: 100%; border-radius: 50%;" [src]="miPortafolio.per.image_perfil" alt="">  
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div style="text-align: left;" class="col">
+          <h1>{{miPortafolio.per.nombre}} {{miPortafolio.per.apellido}}</h1>
+          <p>{{miPortafolio.per.info}}<br>
+            {{miPortafolio.per.ubicacion}}
+          </p>
+        </div>
+      </div>
+    </div>
+</header>

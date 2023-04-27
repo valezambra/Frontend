@@ -1,0 +1,39 @@
+
+<div class="d-flex align-items-center" style="padding: 30px; height: 91vh;">
+    <div style="border-radius: 30px;" class="container-sm card">
+        <form [formGroup]="formulario" (ngSubmit)="onEnviar($event)" style="margin: 20px;">
+
+            <h2 id="bienvenida" style="margin-bottom: 2vh;">Crear Usuario</h2>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp">
+            </div>
+
+            <div *ngIf="Email?.errors&&Email?.touched">
+              <p *ngIf="Email?.hasError('required')">
+                El email es requerido
+              </p>
+              <p *ngIf="Email?.hasError('email')">
+                El formato es invalido
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" formControlName="contraseña" [class.border-danger]="MailValid">
+            </div>
+
+            <div *ngIf="Password?.errors && Password?.touched">
+              <p *ngIf="Password?.hasError('required')">
+                Debe ingresar una contraseña
+              </p>
+              <p *ngIf="Password?.hasError('minlength')">
+                La contraseña debe ser de 8 o más caracteres.
+              </p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
